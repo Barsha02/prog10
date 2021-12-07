@@ -1,0 +1,19 @@
+<html>
+<body>
+<script>
+
+  var bubbleSort = (items) => {
+      for (let i = 0; i < items.length; i++) {
+        for (let j =  i + 1; j < items.length; j++) {
+          if (items[i] > items[j]) {
+            [items[i], items[j]] = [items[j], items[i]];
+          }
+        }
+      } 
+      return items;
+    }
+document.write(bubbleSort([ 15, 41, 22, 78, 2, 54, 9 ]));
+
+</script>
+</body>
+</html>
